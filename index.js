@@ -1,10 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 const connection = require("./config/db");
-require("dotenv").config(); 
+require("dotenv").config();
 
-const jokeRoutes = require('./routes/jokeRoutes');
-const favoriteRoutes = require('./routes/favoriteRoutes');
+const jokeRoutes = require("./routes/jokeRoutes");
+const favoriteRoutes = require("./routes/favoriteRoutes");
 
 const app = express();
 
@@ -16,13 +16,15 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-  res.status(200).send("Welcome to slashash-tech-assign backend api");
+  res.setHeader("Content-type", "text/html");
+  res.send(
+    `<h1 style="color: blue;">Welcome to slashash-tech-assign backend api</h1>`
+  );
 });
 
 // Routes
-app.use('/api/jokes', jokeRoutes);
-app.use('/api/favorites', favoriteRoutes);
-
+app.use("/api/jokes", jokeRoutes);
+app.use("/api/favorites", favoriteRoutes);
 
 app.listen(process.env.PORT, async () => {
   try {
