@@ -1,9 +1,10 @@
 <h1 align="center">🚀 slashash-tech-assign 🚀</h1>
 
 <p align="center">
-This is a simple web application that allows users to search for dad jokes from an external API and save their favorite jokes to a database. The application is built using Node.js, Express.js, MongoDB, and Bootstrap 5.
+<h3>This is a simple web application that allows users to search for dad jokes from an external API and save their favorite jokes to a database. The application is built using Node.js, Express.js, MongoDB, and Bootstrap 5.</h3>
 
-Backend Respositry URL 👉 [Click here](https://joke-api-9w5q.onrender.com/)
+### Backend Respositry URL 👉 [Click here](https://joke-api-9w5q.onrender.com/)
+### Frontend Respositry URL 👉 [Click here](https://joke-favorites.vercel.app/)  Wait for data to appear on page
 
 </p>
 
